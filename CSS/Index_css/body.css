@@ -1,0 +1,140 @@
+body {
+  background-color: #1f2937;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header ---------------------------------------------------------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1f2937;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 40px;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #ff8833;
+  transform: translateY(6px);
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:not(:hover) {
+  transition: transform 0.3s ease-in;
+}
+
+/* button ----------------------------------------------------------------- */
+
+.btn-cv {
+  background-color: #e25e00;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #8a3900;
+}
+
+/* Footer ---------------------------------------------------------------------- */
+.footer {
+  padding: 2rem;
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.footer-info {
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+}
+
+.footer-link {
+  color: #00c347;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f2937;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+
+  .header,
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-image {
+    margin-left: 1.5rem;
+  }
+
+  .projects-container {
+    flex-direction: row;
+  }
+}

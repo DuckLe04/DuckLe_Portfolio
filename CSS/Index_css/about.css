@@ -1,0 +1,50 @@
+.about {
+    scroll-margin-top: 70px;
+    padding: 40px 20px; /* Tăng padding để có khoảng cách hợp lý */
+    background-color: #1f2937; 
+    /* box-shadow: 0 0px 4px 4px rgba(0, 0, 0, 0.5); */
+        /* box-shadow: 0 0 16px rgba(145, 145, 145, 0.5); */
+
+    margin-top: 0;
+    min-height: 512px; /* Đảm bảo chiều cao tối thiểu để hiển thị đầy đủ nội dung */
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%; /* Đảm bảo container sử dụng toàn bộ chiều cao của section */
+}
+
+.about-text {
+    width: 30%;
+    text-align: left;
+    padding-right: 2rem; /* Tăng khoảng cách với about-image */
+}
+
+.about-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-description {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    line-height: 1.5; /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+.about-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    border-radius: 9999px;
+       box-shadow: 0 0 8px 8px rgba(78, 78, 78, 0.5);
+}

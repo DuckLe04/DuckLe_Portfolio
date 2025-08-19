@@ -1,0 +1,202 @@
+.hero {
+    /* background-color: #ffffff; */
+    scroll-margin-top: 82px;
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    /* Tăng kích thước video để phủ kín khung hình */
+    opacity: 0.05;
+    /* Độ mờ của video nền */
+    filter: blur(5px);
+
+    object-fit: cover;
+    /* Đảm bảo video phủ kín khung hình */
+}
+
+.Preview-video {
+    position: relative;
+    /* background-color: rgb(108, 106, 131); */
+    box-shadow: 0 0px 4px 4px #10141b;
+    width: 616px;
+    height: 347px;
+    left: 7%;
+    padding: 0.4%;
+    top: 2%;
+}
+
+
+.hero-content_1 {
+    /* background-color: #7e7e7e; */
+    height: 35%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 5%;
+    padding-top: 7%;
+}
+
+.hero-name {
+    color: #be4f00;
+
+}
+
+.btn-cv {
+    background-color: #8a3900;
+    color: #dddddd;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-left: 1.5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 1.125rem;
+    scale: 1;
+    transition: transform 0.3s ease-out, color 0.3s ease-out, background-color 0.3s ease-out;
+
+}
+
+.btn-cv:hover {
+    background-color: #623100;
+    scale: 0.98;
+    transition: transform 0.3s ease-out, color 0.3s ease-out, background-color 0.3s ease-out;
+    box-shadow: 0px 0 50px rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+
+}
+
+
+.page-content_01 {
+    background-color: #8c5f5f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Để định vị popup tương đối với page-content_01 */
+    cursor: pointer;
+    /* Con trỏ chuột kiểu pointer để báo hiệu có thể nhấp */
+}
+
+.page-content_01-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-content_01:hover .popup-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-content_2 {
+    /* background-color: #ffffff; */
+    box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popup-content {
+    position: absolute;
+    background-color: #141920;
+    color: #ffffff;
+    padding: 1rem;
+    /* border-radius: 5px; */
+    box-shadow: 0 0 16px rgba(145, 145, 145, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+    width: 96%;
+    height: 100%;
+    text-align: left;
+    bottom: 0.5%;
+    /* Đặt popup ngay dưới page-content_01 */
+    transform: translateY(10px);
+    /* Khoảng cách nhỏ từ hình ảnh */
+}
+
+.popup-content h2 {
+    /* margin: 1 0 0.5rem; */
+    margin-top: 5%;
+    margin-left: 6%;
+    font-size: 2rem;
+}
+
+.popup-content h4 {
+    background-color: #8a3900;
+    color: #ffffff;
+    margin-left: 6%;
+    margin-right: 50%;
+    margin: 1 1 1rem;
+    font-size: 1rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* .popup-content h3 {
+    background-color: #002078;
+    color: #ffffff;
+    margin-right: 80%;
+    font-size: 1rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+} */
+
+.popup-content p {
+    margin-left: 6%;
+    margin-right: 10%;
+    font-size: 1rem;
+}
+
+
+/* .hero-content_3 {
+    position: absolute;
+    background-color: #634e4e;
+    height: 65%;
+    width: 50%;
+    top: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+} */

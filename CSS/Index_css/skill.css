@@ -1,0 +1,52 @@
+.skills {
+  padding: 2rem;
+  background-color: #2d3748;
+}
+
+.skills-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-grid {
+  width: 30%;
+  padding-left: 2rem;
+  /* Tăng khoảng cách với about-image */
+}
+
+.skill-card {
+  background-color: #141920;
+  box-shadow: 0 0 16px rgba(145, 145, 145, 0.5);
+  padding: 1rem;
+  border-radius: 0.375rem;
+}
+
+.skill-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: 3%;
+  background-color: #8a3900;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.skill-list li {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  /* Màu chữ nhạt hơn */
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
