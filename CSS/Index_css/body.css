@@ -75,6 +75,8 @@ body {
 /* Footer ---------------------------------------------------------------------- */
 .footer {
   padding: 2rem;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+
   background-color: #1f2937;
   display: flex;
   flex-direction: column;

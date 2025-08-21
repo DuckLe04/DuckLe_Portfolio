@@ -1,6 +1,6 @@
 .projects {
     background-color: #1f2937;
-    /* box-shadow: 0 0 16px rgba(145, 145, 145, 0.5); */
+    box-shadow: 0 0 16px rgba(145, 145, 145, 0.5);
     scroll-margin-top: 90px;
     height: 600px;
     padding: 1rem;
@@ -92,7 +92,7 @@
 
 .project-name {
     position: absolute;
-    top: 0%;
+    top: 4%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
